@@ -17,7 +17,15 @@
 
   <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 
+  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <properties>
+      <property name="withSpaces" value="no"/>
+      <property name="nullPosition" value="last"/>
+    </properties>
+  </rule>
+
   <rule ref="Squiz.NamingConventions.ValidVariableName">
     <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
   </rule>
+
 </ruleset>
