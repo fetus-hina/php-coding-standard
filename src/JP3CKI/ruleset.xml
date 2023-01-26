@@ -17,6 +17,13 @@
 
   <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 
+  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+    <properties>
+      <property name="enableNativeTypeHint" value="true"/>
+    </properties>
+    <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
+  </rule>
+
   <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
     <properties>
       <property name="withSpaces" value="no"/>
@@ -27,5 +34,4 @@
   <rule ref="Squiz.NamingConventions.ValidVariableName">
     <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
   </rule>
-
 </ruleset>
