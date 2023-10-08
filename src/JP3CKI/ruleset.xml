@@ -17,6 +17,8 @@
 
   <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 
+  <rule ref="SlevomatCodingStandard.Functions.NamedArgumentSpacing" />
+
   <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
     <properties>
       <property name="enableNativeTypeHint" value="true"/>
