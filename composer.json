@@ -1,16 +1,20 @@
 {
   "name": "jp3cki/coding-standard",
-  "type": "phpcodesniffer-standard",
   "license": "MIT",
+  "type": "phpcodesniffer-standard",
   "require": {
     "php": "^8.1",
     "ramsey/coding-standard": "^2.2",
     "slevomat/coding-standard": "^8.15.0",
     "squizlabs/php_codesniffer": "^3.11.1"
   },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.45"
+  },
   "config": {
     "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true
     },
     "platform": {
       "php": "8.1.25"
