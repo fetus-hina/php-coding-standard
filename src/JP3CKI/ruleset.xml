@@ -26,9 +26,11 @@
     <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
   </rule>
 
-  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+  <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat">
     <properties>
-      <property name="withSpaces" value="no"/>
+      <property name="withSpacesAroundOperators" value="no"/>
+      <property name="withSpacesInsideParentheses" value="no"/>
+      <property name="shortNullable" value=""/>
       <property name="nullPosition" value="last"/>
     </properties>
   </rule>
