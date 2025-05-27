@@ -5,7 +5,6 @@
   <rule ref="Ramsey">
     <exclude name="Generic.Commenting.Fixme"/>
     <exclude name="Generic.Commenting.Todo"/>
-    <exclude name="Generic.Formatting.SpaceAfterCast"/>
     <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
     <exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"/>
     <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming"/>
@@ -15,7 +14,11 @@
     <exclude name="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing"/>
   </rule>
 
-  <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
+  <rule ref="Generic.Formatting.SpaceAfterCast">
+    <properties>
+      <property name="spacing" value="0"/>
+    </properties>
+  </rule>
 
   <rule ref="SlevomatCodingStandard.Functions.NamedArgumentSpacing" />
 
